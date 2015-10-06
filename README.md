@@ -1,4 +1,3 @@
-# unity-handy
 Some handy and workaround for Unity3D
 
 How to turn off 3D backface culling aka double side
