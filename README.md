@@ -11,10 +11,6 @@ How to use .NET 4.5 via Unity [which stuck at .NET 3.5](http://blogs.unity3d.com
 * UnmanagedExports (updated Dec 19, 2012, 12:23 PM) : via [nuget](https://www.nuget.org/packages/UnmanagedExports) and [web site]( https://sites.google.com/site/robertgiesecke/Home/uploads/unmanagedexports) : `PM> Install-Package UnmanagedExports`
 * IKVM : http://www.ikvm.net/userguide/tutorial.html
 
-
-How to create and fade in GUI panel
----
-* https://youtu.be/Mzt1rEEdeOI?t=861
 How to create and fade in GUI panel
 ---
 * https://youtu.be/Mzt1rEEdeOI?t=861
