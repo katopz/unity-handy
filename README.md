@@ -13,3 +13,13 @@ How to use .NET 4.5 via Unity [which stuck at .NET 3.5](http://blogs.unity3d.com
 How to create and fade in GUI panel
 ---
 * https://youtu.be/Mzt1rEEdeOI?t=861
+
+How to render GUITextures behind the 3D : refer to [this](http://forum.unity3d.com/threads/how-to-set-guitexture-behind-of-3d-object.119520/)
+---
+1. add a new layer in the inspector
+1. and set the GUITexture's layer to this new layer. 
+1. select your Main Camera, click on 'Culling Mask' and uncheck the layer you just made, this will stop the main camera rendering objects (GUITextures) on this layer. 
+1. go and create a second Camera and set its 'Clear Flags' to 'Depth Only' and its 'Culling Mask' to only render the layer you set up earlier for the GUITextures, 
+1. finally change this Camera's 'Depth' to -1. 
+1. Main camera and second camera all needs to be set as 'Depth Only'
+
