@@ -23,6 +23,8 @@ How to render GUITextures behind the 3D : refer to [this](http://forum.unity3d.c
 1. finally change this Camera's 'Depth' to -1. 
 1. Main camera and second camera all needs to be set as 'Depth Only'
 
+Or using this : https://github.com/katopz/ImageAsBackground
+
 How to present pixel perfect GUITextures
 ---
 ```csharp
