@@ -31,14 +31,14 @@ How to render GUITextures behind the 3D : refer to [this](http://forum.unity3d.c
 
 Or using this : https://github.com/katopz/ImageAsBackground
 
-How to present pixel perfect GUITextures
+How to present texture as Screen size via GUITexture
 ---
 ```csharp
 BackgroundTexture.pixelInset = new Rect(0, 0, Screen.width, Screen.height);
 BackgroundTexture.transform.localScale = Vector3.zero;
 ```
 
-How to load picture e.g. `bar.png` from `Resources` to `RawImage` as texture
+How to load picture from `Resources` to `RawImage` as texture
 ---
 * Drop `bar.png` to `Resources` folder.
 * Create `RawImage` with `Foo.cs` below.
