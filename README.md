@@ -41,10 +41,15 @@ BackgroundTexture.transform.localScale = Vector3.zero;
 How to load picture from `Resources` to `RawImage` as texture
 ---
 * Drop `bar.png` to `Resources` folder.
-* Create `RawImage` with `Foo.cs` below.
+* Create `RawImage` on Unity Scene .
+* Add `Foo.cs` below as Component.
 ```csharp
 // In Class
-public RawImage FooRawImage;
+private RawImage FooRawImage;
+
+// When Start
+FooRawImage = this.GetComponent<RawImage>();
+ 
 // In function
 FooRawImage.texture = (Texture)Resources.Load("foo_folder/bar", typeof(Texture));
 ```
