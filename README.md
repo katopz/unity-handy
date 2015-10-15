@@ -38,3 +38,13 @@ BackgroundTexture.pixelInset = new Rect(0, 0, Screen.width, Screen.height);
 BackgroundTexture.transform.localScale = Vector3.zero;
 ```
 
+How to load picture e.g. `bar.png` from `Resources` to `RawImage` as texture
+---
+* Drop `bar.png` to `Resources` folder.
+* Create `RawImage` with `Foo.cs` below.
+```csharp
+// In Class
+public RawImage FooRawImage;
+// In function
+FooRawImage.texture = (Texture)Resources.Load("foo_folder/bar", typeof(Texture));
+```
