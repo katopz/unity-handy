@@ -38,7 +38,7 @@ BackgroundTexture.pixelInset = new Rect(0, 0, Screen.width, Screen.height);
 BackgroundTexture.transform.localScale = Vector3.zero;
 ```
 
-How to load picture from `Resources` to `RawImage` as texture
+How to load picture from `Resources` to `RawImage` as texture.
 ---
 * Drop `bar.png` to `Resources` folder.
 * Create `RawImage` on Unity Scene .
@@ -58,4 +58,20 @@ How to get the components in children include inactive objects.
 ---
 ```csharp
 GetComponentsInChildren<Renderer>(true)
+```
+
+How to speed up Animator lookup. [ref](http://answers.unity3d.com/questions/651044/animatorsetvaluegetvalue-slow.html)
+---
+```csharp
+private int velocityX;
+private Rigidbody myRigidbody;
+ 
+ void Awake() {
+     velocityX = Animator.StringToHash("VELOCITY_X");
+     myRigidbody = rigidbody;
+ }
+ 
+ void Update() {
+     anim.SetFloat(velocityX, myRigidbody.velocity.x);
+ }
 ```
