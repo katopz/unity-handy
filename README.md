@@ -53,3 +53,9 @@ FooRawImage = this.GetComponent<RawImage>();
 // In function
 FooRawImage.texture = (Texture)Resources.Load("foo_folder/bar", typeof(Texture));
 ```
+
+How to get the components in children include inactive objects.
+---
+```csharp
+GetComponentsInChildren<Renderer>(true)
+```
